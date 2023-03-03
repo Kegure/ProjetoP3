@@ -4,27 +4,27 @@ Tentando Advinhar doque se trata o projeto, sei que e algo relacionado a cinema,
 
 Objetivos
 
-    - Criar um sistema CRUD para gerenciamento de filmes, salas de cinema, 
-      vendas de ingressos e usuário.
-    - Utilizar o Spring Framework para implementação das funcionalidades.
-    - Implementar um banco de dados utilizando o Postgresql.
-    - Utilizar os princípios SOLID.
-    - Tornar o sistema acessível via WEB.
+   - Criar um sistema [CRUD](https://coodesh.com/blog/dicionario/o-que-e-crud/) para gerenciamento de filmes, salas de cinema, 
+     vendas de ingressos e usuário.
+   - Utilizar o Spring Framework para implementação das funcionalidades.
+   - Implementar um banco de dados utilizando o Postgresql.
+   - Utilizar os princípios [SOLID](https://medium.com/desenvolvendo-com-paixao/o-que-%C3%A9-solid-o-guia-completo-para-voc%C3%AA-entender-os-5-princ%C3%ADpios-da-poo-2b937b3fc530).
+   - Tornar o sistema acessível via WEB.
 
 Funcionalidades
 
-    - Criação, leitura, atualização e exclusão de filmes e usuário.
-    - Gerenciamento de salas de cinema.
-    - Venda de ingressos.
+   - Criação, leitura, atualização e exclusão de filmes e usuário.
+   - Gerenciamento de salas de cinema.
+   - Venda de ingressos.
 
 Depêndencias Spring utilizadas
 
-    - Lombok
-    - Spring Web
-    - Spring Security
-    - PostgreSQL Driver
-    - Java Mail Sender
-    - Spring Data JPA
+   - Lombok
+   - Spring Web
+   - Spring Security
+   - PostgreSQL Driver
+   - Java Mail Sender
+   - Spring Data JPA
 
 Referências
 
