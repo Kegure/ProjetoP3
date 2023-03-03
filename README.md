@@ -39,3 +39,8 @@ Referências
 Em Andamento
 
    Já que não se sabe oque realmente é o projeto iniciando com o desenvolvimento do CRUD, conforme tutorial         disponível na Referência, ja que dificilmente será inutil.
+   
+Problemas
+  
+  O @WebSecurityConfigurerAdapter Removido do Spring [Link](https://www.baeldung.com/spring-deprecated-websecurityconfigureradapter) , Tentando Implementar utilizando oque foi recomendando.
+  
