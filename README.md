@@ -29,9 +29,9 @@ Depêndencias Spring utilizadas
 Referências
 
    
-   - Documentação do Spring Framework: https://spring.io/<br />
+   - Documentação do Spring Framework: [Link](https://docs.spring.io/spring-framework/docs/current/reference/html/) <br />
    - Tutorial Spring: [Link](https://www.youtube.com/watch?v=QwQuro7ekvc&ab_channel=Amigoscode).<br />
-   - Documentação do Postgresql: https://www.postgresql.org/docs/<br />
+   - Documentação do Postgresql: [Link](https://www.postgresql.org/docs/) <br />
    - Tutorial Postgresql: [Link](https://www.youtube.com/watch?v=XQ_6G0iCyMQ&list=PLwvrYc43l1MxAEOI_KwGe8l42uJxMoKeS&ab_channel=Amigoscode)
    
 
