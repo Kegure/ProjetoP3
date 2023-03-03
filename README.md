@@ -4,7 +4,7 @@ Tentando Advinhar doque se trata o projeto, sei que e algo relacionado a cinema,
 
 Objetivos
 
-    - Criar um sistema CRUD para gerenciamento de filmes, salas de cinema e vendas de ingressos.
+    - Criar um sistema CRUD para gerenciamento de filmes, salas de cinema, vendas de ingressos e usuário.
     - Utilizar o Spring Framework para implementação das funcionalidades.
     - Implementar um banco de dados utilizando o Postgresql.
     - Utilizar os princípios SOLID.
@@ -12,7 +12,7 @@ Objetivos
 
 Funcionalidades
 
-    - Criação, leitura, atualização e exclusão de filmes.
+    - Criação, leitura, atualização e exclusão de filmes e usuário.
     - Gerenciamento de salas de cinema.
     - Venda de ingressos.
 
