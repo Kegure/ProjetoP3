@@ -43,5 +43,5 @@ Já que não se sabe oque realmente é o projeto iniciando com o desenvolvimento
 ----------   
 Problemas
   
-  O @WebSecurityConfigurerAdapter foi removido do Spring [Link](https://www.baeldung.com/spring-deprecated-websecurityconfigureradapter) , Tentando Implementar utilizando oque foi recomendando.
+  O @WebSecurityConfigurerAdapter foi removido do Spring [Link](https://www.baeldung.com/spring-deprecated-websecurityconfigureradapter) , Tentando Implementar utilizando oque foi neste link recomendando.
   
