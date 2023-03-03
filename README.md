@@ -17,11 +17,22 @@ Funcionalidades
     - Gerenciamento de salas de cinema.
     - Venda de ingressos.
 
+Depêndencias Spring utilizadas
+
+    - Lombok
+    - Spring Web
+    - Spring Security
+    - PostgreSQL Driver
+    - Java Mail Sender
+    - Spring Data JPA
+
 Referências
 
    Tutorial: [Link](https://www.youtube.com/watch?v=QwQuro7ekvc&ab_channel=Amigoscode).<br />
    Documentação do Spring Framework: https://spring.io/<br />
    Documentação do Postgresql: https://www.postgresql.org/docs/<br />
+   
+
     
 Em Andamento
 
