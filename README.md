@@ -28,7 +28,7 @@ Depêndencias Spring utilizadas
    - PostgreSQL Driver
    - Java Mail Sender
    - Spring Data JPA
-   - 
+    
 ----------
 Referências
 
