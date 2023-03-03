@@ -35,12 +35,12 @@ Referências
    - Tutorial Postgresql: [Link](https://www.youtube.com/watch?v=XQ_6G0iCyMQ&list=PLwvrYc43l1MxAEOI_KwGe8l42uJxMoKeS&ab_channel=Amigoscode)
    - Como Instalar e Configurar Postgresql no Linux(Ubuntu): [Link](https://www.cherryservers.com/blog/how-to-install-and-setup-postgresql-server-on-ubuntu-20-04)
 
-    
+-------------    
 Em Andamento
 
    Já que não se sabe oque realmente é o projeto iniciando com o desenvolvimento do CRUD, conforme tutorial         disponível na Referência, ja que dificilmente será inutil.
-   
+----------   
 Problemas
   
-  O @WebSecurityConfigurerAdapter Removido do Spring [Link](https://www.baeldung.com/spring-deprecated-websecurityconfigureradapter) , Tentando Implementar utilizando oque foi recomendando.
+  O @WebSecurityConfigurerAdapter foi removido do Spring [Link](https://www.baeldung.com/spring-deprecated-websecurityconfigureradapter) , Tentando Implementar utilizando oque foi recomendando.
   
