@@ -33,7 +33,7 @@ Referências
    - Tutorial Spring: [Link](https://www.youtube.com/watch?v=QwQuro7ekvc&ab_channel=Amigoscode).<br />
    - Documentação do Postgresql: [Link](https://www.postgresql.org/docs/) <br />
    - Tutorial Postgresql: [Link](https://www.youtube.com/watch?v=XQ_6G0iCyMQ&list=PLwvrYc43l1MxAEOI_KwGe8l42uJxMoKeS&ab_channel=Amigoscode)
-   
+   - Como Instalar e Configurar Postgresql no Linux(Ubuntu): [Link](https://www.cherryservers.com/blog/how-to-install-and-setup-postgresql-server-on-ubuntu-20-04)
 
     
 Em Andamento
