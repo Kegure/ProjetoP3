@@ -2,7 +2,12 @@
 // sessão, filme, valor(o valor é calculado baseado no filme e na sala escolhidos),
 // cadeira comprada;
 
-package ProjetoCinema;
+package com.P3.CinemaProj.compra;
+
+import com.P3.CinemaProj.salas.sessao.filme.Filme;
+import com.P3.CinemaProj.salas.Sala;
+import com.P3.CinemaProj.salas.sessao.Sessao;
+import com.P3.CinemaProj.usuario.Usuario;
 
 public class Bilhete {
     private Usuario user;
@@ -11,16 +16,16 @@ public class Bilhete {
     private Sessao sessao;
     private Filme filme;
     private double valor;
-    private int cadeira;
+    private int poltrona;
 
-    public Bilhete(Usuario user, int cpf, Sala sala, Sessao sessao, Filme filme, double valor, int cadeira){
+    public Bilhete(Usuario user, int cpf, Sala sala, Sessao sessao, Filme filme, double valor, int poltronas){
         this.user = user;
         this.cpf = cpf;
         this.sala = sala;
         this.sessao = sessao;
         this.filme = filme;
         this.valor = sala.getValor() + filme.getValor();
-        this.cadeira = cadeira;
+        this.poltrona = poltronas;
     }
     public Usuario getUser(){
         return user;
@@ -40,8 +45,8 @@ public class Bilhete {
     public double getValor(){
         return valor;
     }
-    public int getCadeira(){
-        return cadeira;
+    public int getPoltrona(){
+        return poltrona;
     }
     public void setUser(Usuario user){
         this.user = user;
@@ -61,7 +66,7 @@ public class Bilhete {
     public void setValor(double valor){
         this.valor = valor;
     }
-    public void setCadeira(int cadeira){
-        this.cadeira = cadeira;
+    public void setPoltrona(int poltrona){
+        this.poltrona = poltrona;
     }
 }

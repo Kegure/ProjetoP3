@@ -1,7 +1,7 @@
 // Filme - É a classe que representa o filme exibido na sessão da sala, ela deve
 // ter os seguintes atributos: nome, duração, sinopse, valor.
 
-package ProjetoCinema;
+package com.P3.CinemaProj.salas.sessao.filme;
 
 public class Filme {
     private String nome;

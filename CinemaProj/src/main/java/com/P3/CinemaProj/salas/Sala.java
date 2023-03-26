@@ -2,7 +2,10 @@
 // uma grade de horário, caso não exista uma sessão em algum horário, aquela sessão
 // será registrada como nula e não irá aparecer para o usuário;
 
-package ProjetoCinema;
+package com.P3.CinemaProj.salas;
+
+
+import com.P3.CinemaProj.salas.sessao.Sessao;
 
 public class Sala {
     private int numero;

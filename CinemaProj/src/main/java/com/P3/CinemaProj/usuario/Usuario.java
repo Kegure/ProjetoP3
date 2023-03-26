@@ -4,7 +4,7 @@
 // o usuário pode realizar, alterar ou cancelar uma compra. A classe de compra
 // será explanada a seguir.
 
-package ProjetoCinema;
+package com.P3.CinemaProj.usuario;
 
 public class Usuario {
     private int cpf;
