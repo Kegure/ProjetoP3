@@ -1,17 +1,17 @@
-package com.P3.CinemaProj.salas;
+package com.P3.CinemaProj.salas.sessao.poltronas;
 
 public class InicializacaoPoltronas implements Runnable{
-    private int[][] cadeiras;
+    private int[][] poltronas;
 
-    public InicializacaoPoltronas(int[][] cadeiras){
-        this.cadeiras = cadeiras;
+    public InicializacaoPoltronas(int[][] poltronas){
+        this.poltronas = poltronas;
     }
 
     @Override
     public void run() {
         for (int i = 0; i < 10; i++) {
             for (int j = 0; j < 15; j++) {
-                this.cadeiras[i][j] = 0;
+                this.poltronas[i][j] = 0;
             }
         }
     }

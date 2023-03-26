@@ -2,7 +2,7 @@
 // sessão, filme, valor(o valor é calculado baseado no filme e na sala escolhidos),
 // cadeira comprada;
 
-package com.P3.CinemaProj.compra;
+package com.P3.CinemaProj.item;
 
 import com.P3.CinemaProj.salas.sessao.filme.Filme;
 import com.P3.CinemaProj.salas.Sala;
