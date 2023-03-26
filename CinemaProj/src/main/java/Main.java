@@ -7,6 +7,6 @@ public class Main {
         // Apenas testes
         Filme filme = new Filme("Jabulani");
         Sessao sessao = new Sessao(filme);
-        Poltrona.poltronaMap(3);
+        Poltrona.poltronaMap(0);
     }
 }

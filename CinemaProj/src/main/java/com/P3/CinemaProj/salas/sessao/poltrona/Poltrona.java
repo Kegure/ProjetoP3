@@ -47,19 +47,28 @@ public class Poltrona {
     }
     public static void poltronaMap ( int quantidade){
         String[][] poltronasAdjacentes = poltronasAdjacentes(quantidade);
-        int ASC = 65;
-        int count = 1;
+        int linhasASC = 65;
+        int contadorColunas = 1;
         System.out.print(" ");
-        for (int i = 0; i < poltronas[0].length; i++, count++) {
-            System.out.print(" " + String.format("%5d", count) + " ");
+        for (int i = 0; i < poltronas[0].length; i++, contadorColunas++) {
+            System.out.print(" " + String.format("%5d", contadorColunas) + " ");
         }
         System.out.println();
         for (int i = 0; i < poltronas.length; i++) {
             int poltronasConjunta = 0;
-            System.out.print((char) ASC + "| ");
-            ASC++;
+            System.out.print((char) linhasASC + "| ");
+            linhasASC++;
             for (int j = 0; j < poltronas[i].length; j++) {
-
+                if(poltronas[i][j] == 0 && quantidade > 0){
+                    poltronasConjunta++;
+                    if(poltronasConjunta == quantidade){
+                        for (int k = j - quantidade + 1; k <= j; k++) {
+                            poltronasAdjacentes[i][k] = poltronaLivre(i, k, true);
+                        }
+                        quantidade = 0;
+                        poltronasConjunta = 0;
+                    }
+                }
                 System.out.print(" " + poltronaLivre(i, j, quantidade > 0) + " ");
             }
             System.out.println();
