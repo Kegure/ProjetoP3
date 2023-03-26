@@ -1,4 +1,4 @@
-package com.P3.CinemaProj.salas.sessao.poltronas;
+package com.P3.CinemaProj.salas.sessao.poltrona;
 
 public class InicializacaoPoltronas implements Runnable{
     private int[][] poltronas;

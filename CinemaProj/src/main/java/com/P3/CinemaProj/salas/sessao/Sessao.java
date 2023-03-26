@@ -5,16 +5,15 @@
 package com.P3.CinemaProj.salas.sessao;
 
 import com.P3.CinemaProj.salas.sessao.filme.Filme;
-import com.P3.CinemaProj.salas.sessao.poltronas.InicializacaoPoltronas;
-import com.P3.CinemaProj.salas.sessao.poltronas.Poltronas;
+import com.P3.CinemaProj.salas.sessao.poltrona.Poltrona;
 
 public class Sessao {
     private Filme filme;
-    private Poltronas poltronas;
+    private Poltrona poltronas;
 
     public Sessao(Filme filme){
         this.filme = filme;
-        poltronas = new Poltronas();
+        poltronas = new Poltrona();
     }
     public Filme getFilme(){
         return filme;
