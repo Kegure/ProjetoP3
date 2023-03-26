@@ -17,8 +17,9 @@ public class Usuario {
     private String nomeCartao;
     private String codigoVerificador;
 
-    public Usuario(String user){
+    public Usuario(String user,String senha){
         this.user = user;
+        this.senha = senha;
     }
 
     public int getCpf(){
