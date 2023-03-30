@@ -5,11 +5,9 @@ public class Admin extends Usuario {
     public Admin(String user,String senha) {
         super(user,senha);
     }
-
     public boolean isAdmin() {
         return isAdmin;
     }
-
     public void setAdmin(boolean admin) {
         isAdmin = admin;
     }
