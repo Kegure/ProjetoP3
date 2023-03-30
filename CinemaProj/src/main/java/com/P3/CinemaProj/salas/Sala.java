@@ -4,7 +4,6 @@
 
 package com.P3.CinemaProj.salas;
 
-
 import com.P3.CinemaProj.salas.sessao.Sessao;
 
 public class Sala {
@@ -15,6 +14,16 @@ public class Sala {
     public Sala(int numero){
         this.numero = numero;
         this.sessoes = new Sessao[3];
+
+        if (tipo.equals("sala2d")) {
+            setValor(20.0); // Preço da sala 2D é R$ 20
+        } else if (tipo.equals("sala3d")) {
+            setValor(30.0); // Preço da sala 3D é R$ 30
+        } else if (tipo.equals("salaDeluxe")) {
+            setValor(50.0); // Preço da sala Deluxe é R$ 50
+        } else if (tipo.equals("salaVip")) {
+            setValor(60.0); // Preço da sala VIP é R$ 60
+        }
     }
     public int getNumero(){
         return numero;
