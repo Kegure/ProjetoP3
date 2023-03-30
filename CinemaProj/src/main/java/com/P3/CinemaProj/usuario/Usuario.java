@@ -73,13 +73,4 @@ public class Usuario {
     public void setNomeCartao(String nomeCartao){
         this.nomeCartao = nomeCartao;
     }
-    public void realizarCompra(){
-
-    }
-    public void alterarCompra(){
-
-    }
-    public void cancelarCompra(){
-
-    }
 }
