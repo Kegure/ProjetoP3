@@ -40,5 +40,4 @@ public class Sala {
     public void setValor(double valor){
         this.valor = valor;
     }
-    // CRIAR TIPOS DE SALAS COMO (ex. 2D, 3D, DELUXE, VIP )
 }
