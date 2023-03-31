@@ -11,7 +11,7 @@ public class Sala {
     private Sessao[] sessoes;
     private double valor;
 
-    public Sala(int numero){
+    public Sala(int numero, String tipo){
         this.numero = numero;
         this.sessoes = new Sessao[3];
 
