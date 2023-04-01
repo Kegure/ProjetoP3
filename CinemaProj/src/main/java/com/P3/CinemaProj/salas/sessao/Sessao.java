@@ -21,4 +21,11 @@ public class Sessao {
     public void setFilme(Filme filme){
         this.filme = filme;
     }
+    public Poltrona getPoltronas() {
+        return poltronas;
+    }
+
+    public void setPoltronas(Poltrona poltronas) {
+        this.poltronas = poltronas;
+    }
 }

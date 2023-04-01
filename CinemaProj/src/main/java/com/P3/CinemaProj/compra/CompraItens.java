@@ -1,6 +1,6 @@
 package com.P3.CinemaProj.compra;
 
-import com.P3.CinemaProj.item.Item;
+import com.P3.CinemaProj.itens.Item;
 
 import java.util.ArrayList;
 
