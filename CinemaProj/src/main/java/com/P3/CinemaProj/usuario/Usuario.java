@@ -10,6 +10,7 @@ public class Usuario {
     private int cpf;
     private String user;
     private String senha;
+    private String name;
     private int idade;
     private char sexo;
     private String email;

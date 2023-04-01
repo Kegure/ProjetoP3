@@ -5,8 +5,8 @@ import java.util.Queue;
 
 public class Poltrona {
     private int[][] poltronas;
-    private Thread thread;
-    private Queue<PosicaoPoltronas> poltronasAdjacentesValidas = new LinkedList<>();
+    private final Thread thread;
+    private final Queue<PosicaoPoltronas> poltronasAdjacentesValidas = new LinkedList<>();
 
     public Poltrona() {
         poltronas = new int[10][15];
