@@ -49,6 +49,7 @@ public class Poltrona {
                     if (qtd >= quantidade) {
                         preencherPoltronasAdjacentes();
                     }
+                    poltronasAdjacentesValidas.clear();
                     qtd = 0;
                 }
             }
