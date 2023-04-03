@@ -33,6 +33,30 @@ public class Menu {
                 console();
             }
         }
+        int op2 = in.nextInt();
+        switch (op2) {
+            case 1: 
+                // IMPLEMENTAR GERENCIAMENTO DE SALA
+                break;
+            case 2:
+                // IMPLEMENTAR GERENCIAMENTO DA SESSAO
+                break;
+            case 3:
+                // IMPLEMENTAR GERENCIAMENTO DO FILME
+                break;
+            case 4:
+                // IMPLEMENTAR GERENCIAMENTO DAS POLTRONAS
+                break;
+            case 5:
+                // IMPLEMENTAR GERENCIAMENTO DOS BILHETES
+                break;
+            case 6: 
+                // IMPLEMENTAR GERENCIAMENTO DOS ITENS
+                break;
+            default:
+                System.out.println("Opção inválida tente novamente!");
+                break;
+        }
     }
     private static void exibirMenuLoginRegistro(){
         System.out.println("Opções:");
