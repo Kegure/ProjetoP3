@@ -6,7 +6,7 @@ package com.P3.CinemaProj.itens;
 import com.P3.CinemaProj.salas.Sala;
 import com.P3.CinemaProj.usuario.Usuario;
 
-public class Bilhete<T> {
+public class Bilhete {
     private Usuario usuario;
     private Sala sala;
     private double valor;
