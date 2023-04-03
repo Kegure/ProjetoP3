@@ -1,13 +1,13 @@
 package com.P3.CinemaProj.usuario.registro;
 
+import com.P3.CinemaProj.usuario.Cliente;
 import com.P3.CinemaProj.usuario.Usuario;
 import java.util.List;
 import java.util.Scanner;
 
-public class RegistroControl {
+public class ControleRegistro {
     private List<Usuario> listaUsuario;
-
-    public RegistroControl(List<Usuario> listaUsuario) {
+    public ControleRegistro(List<Usuario> listaUsuario) {
         this.listaUsuario = listaUsuario;
     }
 
@@ -33,7 +33,7 @@ public class RegistroControl {
                     System.out.println("Tentativa ("+tentativas+") de (3)");
                 }
                 if(tentativas == 3){
-                    System.out.println("Muitas Tentativas, Redirecionando para o Menu.\n");
+                    System.out.println("Muitas Tentativas, Redirecionando para o com.P3.CinemaProj.Menu.\n");
                     return;
                 }
             }else{
@@ -42,12 +42,13 @@ public class RegistroControl {
         }while(checkUser(user));
         System.out.println("Senha:");
         senha = in.nextLine();
-        listaUsuario.add(new Usuario(user,senha));
+        listaUsuario.add(new Cliente(user,senha));
+        System.out.println("Registrado com Sucesso!");
     }
-    public boolean checkUser(String userTry){
+    private boolean checkUser(String nomeUsuario){
         for(int i = 0 ; i < listaUsuario.size(); i++){
             Usuario user = listaUsuario.get(i);
-            if(user.getUser().equals(userTry)){
+            if(user.getUsuario().equals(nomeUsuario)){
                 return true;
             }
         }

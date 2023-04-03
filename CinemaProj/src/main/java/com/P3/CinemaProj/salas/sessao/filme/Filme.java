@@ -8,9 +8,10 @@ public class Filme {
     private int duracao;
     private String sinopse;
     private double valor;
-
-    public Filme(String nome){
+    public Filme(String nome,int duracao){
         this.nome = nome;
+        this.duracao = duracao;
+        this.sinopse = "Este filme ainda não possui uma Sinopse";
     }
     public String getNome(){
         return nome;
@@ -21,9 +22,6 @@ public class Filme {
     public String getSinopse(){
         return sinopse;
     }
-    public double getValor(){
-        return valor;
-    }
     public void setNome(String nome){
         this.nome = nome;
     }
@@ -33,7 +31,12 @@ public class Filme {
     public void setSinopse(String sinopse){
         this.sinopse = sinopse;
     }
-    public void setValor(double valor){
+
+    public double getValor() {
+        return valor;
+    }
+
+    public void setValor(double valor) {
         this.valor = valor;
     }
 }

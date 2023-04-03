@@ -6,72 +6,51 @@
 
 package com.P3.CinemaProj.usuario;
 
-public class Usuario {
-    private int cpf;
-    private String user;
+public abstract class Usuario {
+    private String usuario;
     private String senha;
-    private String name;
-    private int idade;
-    private char sexo;
-    private String email;
-    private String numeroCartao;
-    private String nomeCartao;
-    private String codigoVerificador;
+    private Pessoa pessoa;
+    private boolean isAdmin;
 
     public Usuario(String user,String senha){
-        this.user = user;
+        this.usuario = user;
         this.senha = senha;
     }
 
-    public int getCpf(){
-        return cpf;
+    public String getUsuario() {
+        return usuario;
     }
-    public String getUser(){
-        return user;
+
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
     }
-    public String getSenha(){
+
+    public String getSenha() {
         return senha;
     }
-    public int getIdade(){
-        return idade;
-    }
-    public char getSexo(){
-        return sexo;
-    }
-    public String getEmail(){
-        return email;
-    }
-    public String getNumCartao(){
-        return numeroCartao;
-    }
-    public String getNomeCartao(){
-        return nomeCartao;
-    }
-    public String getCodVerificador(){
-        return codigoVerificador;
-    }
-    public void setCpf(int cpf){
-        this.cpf = cpf;
-    }
-    public void setUser(String user){
-        this.user = user;
-    }
-    public void setSenha(String senha){
+
+    public void setSenha(String senha) {
         this.senha = senha;
     }
-    public void setIdade(int idade){
-        this.idade = idade;
+
+    public Pessoa getPessoa() {
+        return pessoa;
     }
-    public void setSexo(char sexo){
-        this.sexo = sexo;
+
+    public void setPessoa(Pessoa pessoa) {
+        this.pessoa = pessoa;
     }
-    public void setEmail(String email){
-        this.email = email;
+
+    public boolean isAdmin() {
+        return isAdmin;
     }
-    public void setNumCartao(String numeroCartao){
-        this.numeroCartao = numeroCartao;
+
+    public void setAdmin(boolean admin) {
+        isAdmin = admin;
     }
-    public void setNomeCartao(String nomeCartao){
-        this.nomeCartao = nomeCartao;
+
+    public void preencherDadosPessoa(){
+        //this.pessoa = new Pessoa();
     }
 }
+

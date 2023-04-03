@@ -27,9 +27,9 @@ public class Poltrona {
         this.poltronas = poltronas;
     }
 
-    public boolean poltronaLock(int l, int c) {
-        if (poltronas[l][c] == 0) {
-            poltronas[l][c] = 1;
+    public boolean poltronaLock(int linha, int coluna) {
+        if (poltronas[linha][coluna] == 0) {
+            poltronas[linha][coluna] = 1;
             return true;
         }
         return false;
@@ -57,14 +57,14 @@ public class Poltrona {
         }
     }
 
-    public void preencherPoltronasAdjacentes() {
+    private void preencherPoltronasAdjacentes() {
         for (int j = 0; j < poltronas[0].length; j++) {
             PosicaoPoltronas poltronaAtual = poltronasAdjacentesValidas.poll();
             poltronas[poltronaAtual.getLinha()][poltronaAtual.getColuna()] = 2;
         }
         poltronasAdjacentesValidas.clear();
     }
-    public void resetarPoltronasAdjacentes () {
+    private void resetarPoltronasAdjacentes () {
         for (int i = 0; i < poltronas.length; i++) {
             for (int j = 0; j < poltronas[0].length; j++) {
                 if (poltronas[i][j] == 2) {
@@ -96,10 +96,10 @@ public class Poltrona {
             resetarPoltronasAdjacentes();
         }
     }
-    public String poltronaLivre ( int i, int j){
-        if (poltronas[i][j] == 0) {
+    private String poltronaLivre ( int linha, int coluna){
+        if (poltronas[linha][coluna] == 0) {
             return "\033[32m[   ]\033[0m";
-        } else if (poltronas[i][j] == 2) {
+        } else if (poltronas[linha][coluna] == 2) {
             return "\u001B[33m[   ]\u001B[0m";
         }
         return "\u001B[30m[ \u001B[31mX \u001B[30m]\u001B[0m";
