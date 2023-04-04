@@ -24,7 +24,6 @@ public class Sessao {
     public Poltrona getPoltronas() {
         return poltronas;
     }
-
     public void setPoltronas(Poltrona poltronas) {
         this.poltronas = poltronas;
     }

@@ -84,24 +84,4 @@ public class Menu {
         System.out.println("3 - Comprar Consumiveis");
         System.out.println("0 - Deslogar");
     }
-//     do{
-//        op = in.nextInt();
-//        in.nextInt();
-//        switch(op){
-//            case 1:
-//                break;
-//            case 2:
-//                break;
-//            case 3:
-//                break;
-//            case 4:
-//                break;
-//            case 5:
-//                break;
-//            case 6:
-//                break;
-//            default:
-//                break;
-//        }
-//    }
 }

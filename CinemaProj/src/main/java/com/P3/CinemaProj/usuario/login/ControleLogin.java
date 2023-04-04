@@ -45,7 +45,6 @@ public class ControleLogin {
         }
         return null;
     }
-
     private Usuario checkUser(String userTry){
         for(int i = 0 ; i < listaUsuario.size(); i++){
             Usuario user = listaUsuario.get(i);

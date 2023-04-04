@@ -13,20 +13,24 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         // Por enquanto usando main como teste
-        List<Usuario> listaUsuario = new ArrayList<>();
-        Menu menu = new Menu(listaUsuario);
+//        List<Usuario> listaUsuario = new ArrayList<>();
+//        Menu menu = new Menu(listaUsuario);
+//
+//        listaUsuario.add(new Administrador("admin", "admin"));
+//
+//        menu.console();
 
-        listaUsuario.add(new Administrador("admin", "admin"));
-
-        menu.console();
-
-//        código comentado importante nao apaguem
-//        Poltrona j = sessao.getPoltronas();
-//        try {
-//            j.join();
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
+        Poltrona po = new Poltrona();
+        try {
+            po.join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        po.poltronaLock(0,1);
+        po.poltronaLock(1,2);
+        po.poltronaLock(2,13);
+        po.poltronaLock(3,12);
+        po.poltronaMap(2);
     }
 }
 

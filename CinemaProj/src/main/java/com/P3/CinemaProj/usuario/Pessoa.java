@@ -6,18 +6,15 @@ public class Pessoa {
     private int idade;
     private char sexo;
     private String email;
-    private String numeroCartao;
+    private int numeroCartao;
     private String nomeCartao;
     private String codigoVerificador;
 
-    public Pessoa(int cpf, String nome) {
+    public Pessoa(int cpf, String nome,int numeroCartao) {
         this.cpf = cpf;
         this.nome = nome;
+        this.numeroCartao = numeroCartao;
     }
-    public Pessoa(){
-        this.cpf = 0;
-    }
-
     public int getCpf() {
         return cpf;
     }
@@ -58,11 +55,11 @@ public class Pessoa {
         this.email = email;
     }
 
-    public String getNumeroCartao() {
+    public int getNumeroCartao() {
         return numeroCartao;
     }
 
-    public void setNumeroCartao(String numeroCartao) {
+    public void setNumeroCartao(int numeroCartao) {
         this.numeroCartao = numeroCartao;
     }
 

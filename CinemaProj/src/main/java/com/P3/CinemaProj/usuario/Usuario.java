@@ -49,8 +49,8 @@ public abstract class Usuario {
         isAdmin = admin;
     }
 
-    public void preencherDadosPessoa(){
-        //this.pessoa = new Pessoa();
+    public void preencherDadosPessoa(int cpf,String nome,int numeroCartao){
+        this.pessoa = new Pessoa(cpf,nome,numeroCartao);
     }
 }
 

@@ -14,19 +14,15 @@ public class Poltrona {
         thread = new Thread(inicializacaoPoltronas);
         thread.start();
     }
-
-
     public void join() throws InterruptedException {
         thread.join();
     }
     public int[][] getPoltronas() {
         return poltronas;
     }
-
     public void setPoltronas(int[][] poltronas) {
         this.poltronas = poltronas;
     }
-
     public boolean poltronaLock(int linha, int coluna) {
         if (poltronas[linha][coluna] == 0) {
             poltronas[linha][coluna] = 1;
@@ -53,16 +49,16 @@ public class Poltrona {
                     qtd = 0;
                 }
             }
-            preencherPoltronasAdjacentes();
+            if(qtd >= quantidade) preencherPoltronasAdjacentes();
+            poltronasAdjacentesValidas.clear();
         }
     }
 
     private void preencherPoltronasAdjacentes() {
-        for (int j = 0; j < poltronas[0].length; j++) {
+        while (!poltronasAdjacentesValidas.isEmpty()) {
             PosicaoPoltronas poltronaAtual = poltronasAdjacentesValidas.poll();
             poltronas[poltronaAtual.getLinha()][poltronaAtual.getColuna()] = 2;
         }
-        poltronasAdjacentesValidas.clear();
     }
     private void resetarPoltronasAdjacentes () {
         for (int i = 0; i < poltronas.length; i++) {

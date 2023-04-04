@@ -4,20 +4,19 @@
 
 package com.P3.CinemaProj.itens;
 import com.P3.CinemaProj.salas.Sala;
-import com.P3.CinemaProj.usuario.Usuario;
+import com.P3.CinemaProj.usuario.Pessoa;
 
 public class Bilhete {
-    private Usuario usuario;
+    private Pessoa cliente;
     private Sala sala;
     private double valor;
-    private int[][] poltrona;
-
+    private int indexSessao;
     public Bilhete(Sala sala){
         this.sala = sala;
         this.valor = sala.getValor();
     }
-    public Usuario getUser(){
-        return usuario;
+    public Pessoa getCliente(){
+        return cliente;
     }
     public Sala getSala(){
         return sala;
@@ -25,13 +24,17 @@ public class Bilhete {
     public double getValor(){
         return valor;
     }
-    public void setUser(Usuario user){
-        this.usuario = user;
+    public void setCliente(Pessoa cliente){
+        this.cliente = cliente;
     }
     public void setSala(Sala sala){
         this.sala = sala;
     }
-    public void setValor(double valor){
-        this.valor = valor;
+    public void setValor(double valor){this.valor = valor;}
+    public int getIndexSessao(){
+        return this.indexSessao;
+    }
+    public void setIndexSessao(int indexSessao){
+        this.indexSessao = indexSessao;
     }
 }
