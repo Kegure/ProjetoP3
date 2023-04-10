@@ -78,6 +78,31 @@ public class Loja {
                     qtd = in.nextInt();
                     adicionarItem(6,qtd);
                     break;
+                case 7:
+                    System.out.println("Qual a quantidade desse produto que voçe deseja Senhor(A) " +cliente.getNome()+"?");
+                    qtd = in.nextInt();
+                    adicionarItem(7,qtd);
+                    break;
+                case 8:
+                    System.out.println("Qual a quantidade desse produto que voçe deseja Senhor(A) " +cliente.getNome()+"?");
+                    qtd = in.nextInt();
+                    adicionarItem(8,qtd);
+                    break;
+                case 9:
+                    System.out.println("Qual a quantidade desse produto que voçe deseja Senhor(A) " +cliente.getNome()+"?");
+                    qtd = in.nextInt();
+                    adicionarItem(9,qtd);
+                    break;
+                case 10:
+                    System.out.println("Qual a quantidade desse produto que voçe deseja Senhor(A) " +cliente.getNome()+"?");
+                    qtd = in.nextInt();
+                    adicionarItem(10,qtd);
+                    break;
+                case 11:
+                    System.out.println("Qual a quantidade desse produto que voçe deseja Senhor(A) " +cliente.getNome()+"?");
+                    qtd = in.nextInt();
+                    adicionarItem(11,qtd);
+                    break;
                 case 0:
                     System.out.println("Carrinho Encerrado");
                     break;
@@ -109,12 +134,17 @@ public class Loja {
     }
     private void menuLoja(){
         System.out.println("Digite o id correspondente para comprar:");
-        System.out.println("1 - Pipoca 40 R$");
-        System.out.println("2 - Refrigerante 8 R$");
-        System.out.println("3 - Doce 5 R$");
-        System.out.println("4 - Taça de Vinho 23 R$");
-        System.out.println("5 - Cobertor 20 R$");
-        System.out.println("6 - Travesseiro 20 R$");
+        System.out.println("1 - Pipoca Pequena 15 R$");
+        System.out.println("2 - Pipoca Média 25 R$");
+        System.out.println("3 - Pipoca Grande 40 R$");
+        System.out.println("4 - Refrigerante 8 R$");
+        System.out.println("5 - Doce 8 R$");
+        System.out.println("6 - Cachorro Quente 12 R$");
+        System.out.println("7 - Suco 7 R$");
+        System.out.println("8 - Água 5 R$");
+        System.out.println("9 - Taça de Vinho 23 R$");
+        System.out.println("10 - Cobertor 20 R$");
+        System.out.println("11 - Travesseiro 20 R$");
         System.out.println("0 - Encerrar Carrinho");
     }
 }
