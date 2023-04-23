@@ -14,7 +14,7 @@ public class Sala {
     private final double valor = 20;                                    // Temporariamente deixando valor fixo.
     private Map<String,Integer> agendaFixa = new HashMap<>(); // Depois podemos otimizar baseado no tempo dos filmes.
     private int contadorSessao = 0;
-    private TiposSalas tipoSala;
+    private TipoSalas tipoSala;
     public Sala(int quantidadeSalas){
         this.sessoes = new Sessao[quantidadeSalas];
     }
@@ -44,13 +44,3 @@ public class Sala {
         }
     }
 }
-//        Deixar o tipo de salas para segunda entrega ja que modificar algumas coisas.
-//        if (tipo.equals("sala2d")) {
-//            setValor(20.0); // Preço da sala 2D é R$ 20
-//        } else if (tipo.equals("sala3d")) {
-//            setValor(30.0); // Preço da sala 3D é R$ 30
-//        } else if (tipo.equals("salaDeluxe")) {
-//            setValor(50.0); // Preço da sala Deluxe é R$ 50
-//        } else if (tipo.equals("salaVip")) {
-//            setValor(60.0); // Preço da sala VIP é R$ 60
-//        }

@@ -3,15 +3,21 @@
 
 package com.P3.CinemaProj.salas.sessao.filme;
 
+import java.util.ArrayList;
+
 public class Filme {
     private String nome;
     private int duracao;
     private String sinopse;
     private double valor;
+    private String[] critica;
+    private double nota = 0;
+    private int quantidadeCriticos = 0;
     public Filme(String nome,int duracao){
         this.nome = nome;
         this.duracao = duracao;
         this.sinopse = "Este filme ainda não possui uma Sinopse";
+        this.critica = new String[100];
     }
     public String getNome(){
         return nome;
@@ -30,6 +36,30 @@ public class Filme {
     }
     public void setSinopse(String sinopse){
         this.sinopse = sinopse;
+    }
+
+    public String[] getCritica() {
+        return critica;
+    }
+
+    public void addCritica(String critica) {
+        this.critica[this.quantidadeCriticos] = critica;
+    }
+
+    public double getNota() {
+        return nota;
+    }
+
+    public void setNota(double nota) {
+        this.nota = nota;
+    }
+
+    public int getQuantidadeCriticos() {
+        return quantidadeCriticos;
+    }
+
+    public void setQuantidadeCriticos(int quantidadeCriticos) {
+        this.quantidadeCriticos = quantidadeCriticos;
     }
 
     public double getValor() {
