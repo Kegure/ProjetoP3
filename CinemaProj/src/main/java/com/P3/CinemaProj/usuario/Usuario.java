@@ -12,7 +12,7 @@ public abstract class Usuario {
     private Pessoa pessoa;
     private boolean isAdmin;
 
-    public Usuario(String user, String senha) {
+    public Usuario(String user,String senha){
         this.usuario = user;
         this.senha = senha;
     }
@@ -49,7 +49,8 @@ public abstract class Usuario {
         isAdmin = admin;
     }
 
-    public void preencherDadosPessoa(int cpf, String nome, int numeroCartao) {
-        this.pessoa = new Pessoa(cpf, nome, numeroCartao);
+
+    public void preencherDadosPessoa(int cpf,String nome,int numeroCartao){
+        this.pessoa = new Pessoa(cpf,nome,numeroCartao);
     }
 }

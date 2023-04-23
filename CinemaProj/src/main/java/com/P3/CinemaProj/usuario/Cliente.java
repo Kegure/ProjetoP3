@@ -60,6 +60,7 @@ public class Cliente extends Usuario{
     }
     public void compraBilhete(Sala sala){
         CompraBilhete compraBilhete = new CompraBilhete();
-        compraBilhete.comprarBilhete(sala,listaBilhetes);
+        int quantidadeBilhetes  = compraBilhete.comprarBilhete(sala,this.listaBilhetes);
+        double valor = quantidadeBilhetes * (sala.getValor() * this.cupomPromocional.getDesconto());
     }
 }
