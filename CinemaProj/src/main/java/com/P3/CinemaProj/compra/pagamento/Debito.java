@@ -1,4 +1,4 @@
-package com.P3.CinemaProj.compra;
+package com.P3.CinemaProj.compra.pagamento;
 
 public class Debito implements ValidarPagamento{
 
