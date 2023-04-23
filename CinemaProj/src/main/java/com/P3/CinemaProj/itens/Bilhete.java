@@ -11,7 +11,9 @@ public class Bilhete {
     private Sala sala;
     private double valor;
     private int indexSessao;
+    private CupomPromocional cupomPromocional;
     public Bilhete(Sala sala){
+        this.cupomPromocional = CupomPromocional.CUPOM_DEFAULT;
         this.sala = sala;
         this.valor = sala.getValor();
     }
@@ -22,7 +24,7 @@ public class Bilhete {
         return sala;
     }
     public double getValor(){
-        return valor;
+        return valor*cupomPromocional.getDesconto();
     }
     public void setCliente(Pessoa cliente){
         this.cliente = cliente;
@@ -36,5 +38,13 @@ public class Bilhete {
     }
     public void setIndexSessao(int indexSessao){
         this.indexSessao = indexSessao;
+    }
+
+    public CupomPromocional getCupomPromocional() {
+        return cupomPromocional;
+    }
+
+    public void setCupomPromocional(CupomPromocional cupomPromocional) {
+        this.cupomPromocional = cupomPromocional;
     }
 }

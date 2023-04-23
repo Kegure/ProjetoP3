@@ -2,7 +2,6 @@ package com.P3.CinemaProj.compra;
 
 import com.P3.CinemaProj.itens.Bilhete;
 import com.P3.CinemaProj.salas.Sala;
-import com.P3.CinemaProj.salas.sessao.Sessao;
 import com.P3.CinemaProj.salas.sessao.poltrona.Poltrona;
 
 import java.sql.SQLOutput;
@@ -29,7 +28,7 @@ public class CompraBilhete{
         quantidadeBilhetes = in.nextInt();
         Poltrona poltrona = bilhete.getSala().getSessao(bilhete.getIndexSessao()).getPoltronas();
         System.out.println("Qual Poltrona Livre voce deseja, As poltronas livres sao verdes, e as amarelas sugestoes onde voce podera comprar seus bilhetes juntos");
-        poltrona.poltronaMap(10);
+        poltrona.poltronaMap(quantidadeBilhetes);
         for(int i = 0 ; i < quantidadeBilhetes ; i++){
             System.out.println("Digite a linha e coluna que deseja com os valores numericos de 1-15 para colunar e 1-10 para a linha");
             do{

@@ -14,6 +14,7 @@ public class Sala {
     private final double valor = 20;                                    // Temporariamente deixando valor fixo.
     private Map<String,Integer> agendaFixa = new HashMap<>(); // Depois podemos otimizar baseado no tempo dos filmes.
     private int contadorSessao = 0;
+    private TiposSalas tipoSala;
     public Sala(int quantidadeSalas){
         this.sessoes = new Sessao[quantidadeSalas];
     }
