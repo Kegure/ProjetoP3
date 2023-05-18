@@ -49,57 +49,57 @@ public class Loja {
             op = in.nextInt();
             switch(op){
                 case 1:
-                    System.out.println("Qual a quantidade desse produto que voçe deseja Senhor(A) " +cliente.getNome()+"?");
+                    System.out.println("Qual a quantidade desse produto que você deseja Senhor(A) " +cliente.getNome()+"?");
                     qtd = in.nextInt();
                     adicionarItem(1,qtd);
                     break;
                 case 2:
-                    System.out.println("Qual a quantidade desse produto que voçe deseja Senhor(A) " +cliente.getNome()+"?");
+                    System.out.println("Qual a quantidade desse produto que você deseja Senhor(A) " +cliente.getNome()+"?");
                     qtd = in.nextInt();
                     adicionarItem(2,qtd);
                     break;
                 case 3:
-                    System.out.println("Qual a quantidade desse produto que voçe deseja Senhor(A) " +cliente.getNome()+"?");
+                    System.out.println("Qual a quantidade desse produto que você deseja Senhor(A) " +cliente.getNome()+"?");
                     qtd = in.nextInt();
                     adicionarItem(3,qtd);
                     break;
                 case 4:
-                    System.out.println("Qual a quantidade desse produto que voçe deseja Senhor(A) " +cliente.getNome()+"?");
+                    System.out.println("Qual a quantidade desse produto que você deseja Senhor(A) " +cliente.getNome()+"?");
                     qtd = in.nextInt();
                     adicionarItem(4,qtd);
                     break;
                 case 5:
-                    System.out.println("Qual a quantidade desse produto que voçe deseja Senhor(A) " +cliente.getNome()+"?");
+                    System.out.println("Qual a quantidade desse produto que você deseja Senhor(A) " +cliente.getNome()+"?");
                     qtd = in.nextInt();
                     adicionarItem(5,qtd);
                     break;
                 case 6:
-                    System.out.println("Qual a quantidade desse produto que voçe deseja Senhor(A) " +cliente.getNome()+"?");
+                    System.out.println("Qual a quantidade desse produto que você deseja Senhor(A) " +cliente.getNome()+"?");
                     qtd = in.nextInt();
                     adicionarItem(6,qtd);
                     break;
                 case 7:
-                    System.out.println("Qual a quantidade desse produto que voçe deseja Senhor(A) " +cliente.getNome()+"?");
+                    System.out.println("Qual a quantidade desse produto que você deseja Senhor(A) " +cliente.getNome()+"?");
                     qtd = in.nextInt();
                     adicionarItem(7,qtd);
                     break;
                 case 8:
-                    System.out.println("Qual a quantidade desse produto que voçe deseja Senhor(A) " +cliente.getNome()+"?");
+                    System.out.println("Qual a quantidade desse produto que você deseja Senhor(A) " +cliente.getNome()+"?");
                     qtd = in.nextInt();
                     adicionarItem(8,qtd);
                     break;
                 case 9:
-                    System.out.println("Qual a quantidade desse produto que voçe deseja Senhor(A) " +cliente.getNome()+"?");
+                    System.out.println("Qual a quantidade desse produto que você deseja Senhor(A) " +cliente.getNome()+"?");
                     qtd = in.nextInt();
                     adicionarItem(9,qtd);
                     break;
                 case 10:
-                    System.out.println("Qual a quantidade desse produto que voçe deseja Senhor(A) " +cliente.getNome()+"?");
+                    System.out.println("Qual a quantidade desse produto que você deseja Senhor(A) " +cliente.getNome()+"?");
                     qtd = in.nextInt();
                     adicionarItem(10,qtd);
                     break;
                 case 11:
-                    System.out.println("Qual a quantidade desse produto que voçe deseja Senhor(A) " +cliente.getNome()+"?");
+                    System.out.println("Qual a quantidade desse produto que você deseja Senhor(A) " +cliente.getNome()+"?");
                     qtd = in.nextInt();
                     adicionarItem(11,qtd);
                     break;
@@ -107,7 +107,7 @@ public class Loja {
                     System.out.println("Carrinho Encerrado");
                     break;
                 default:
-                    System.out.println("Opção invalida, tente novamente");
+                    System.out.println("Opção inválida, Tente Novamente");
                     comprar();
                     break;
             }
@@ -115,10 +115,10 @@ public class Loja {
         char op2;
         do{
             if(carrinho.isEmpty()){
-                System.out.println("Saindo das compras voce adiconou nada no seu carrinho");
+                System.out.println("Saindo das compras, você não adiconou nada ao seu carrinho");
                 op2 = 'N';
             }else{
-                System.out.println("O valor total é de "+valorTotal()+"\n deseja concluir a compra?(S/N)");
+                System.out.println("O valor total é de "+ valorTotal() + "\n deseja concluir a compra?(S/N)");
                 op2 = Character.toUpperCase(in.next().charAt(0));
                 if(op2 == 'S'){
                     transferirCarrinhoParaInventario();
@@ -127,7 +127,7 @@ public class Loja {
                     System.out.println("Compra cancelada!");
                     cancelarTodosItens();
                 }else{
-                    System.out.println("Opcao invalida tente novamente");
+                    System.out.println("Opcao inválida tente novamente");
                 }
             }
         }while(op2 != 'N' && op2 !='S');
